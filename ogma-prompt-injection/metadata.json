@@ -1,0 +1,76 @@
+{
+  "base_model": "axiotic/ogma-base",
+  "datasets": [
+    "neuralchemy/Prompt-injection-dataset/full",
+    "deepset/prompt-injections"
+  ],
+  "splits_after_dedup": {
+    "train": 14582,
+    "validation": 941,
+    "test": 1058
+  },
+  "hyperparameters": {
+    "max_len": 512,
+    "batch_size": 32,
+    "epochs_run": 4,
+    "epochs_configured": 5,
+    "patience": 2,
+    "lr_head": 0.0005,
+    "lr_encoder": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "freeze_encoder": false,
+    "seed": 42
+  },
+  "best": {
+    "epoch": 2,
+    "val_macro_f1": 0.9631541367237885
+  },
+  "test_combined": {
+    "loss": 0.13129152411098516,
+    "acc": 0.9555765595463138,
+    "macro_f1": 0.954469165554934
+  },
+  "test_per_source": {
+    "deepset/prompt-injections": {
+      "n": 116,
+      "acc": 0.9310344827586207,
+      "macro_f1": 0.9310344827586207
+    },
+    "neuralchemy/Prompt-injection-dataset": {
+      "n": 942,
+      "acc": 0.9585987261146497,
+      "macro_f1": 0.9572882987517134
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.281331469607131,
+      "val_loss": 0.12121875459421327,
+      "val_acc": 0.9585547290116897,
+      "val_macro_f1": 0.9576705479333553
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.04304885691677204,
+      "val_loss": 0.12759676096836198,
+      "val_acc": 0.9638682252922423,
+      "val_macro_f1": 0.9631541367237885
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.01663127101716798,
+      "val_loss": 0.15680790694943142,
+      "val_acc": 0.9585547290116897,
+      "val_macro_f1": 0.9576437756005342
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.010320366228514007,
+      "val_loss": 0.1599900820332121,
+      "val_acc": 0.9606801275239107,
+      "val_macro_f1": 0.9598662862741708
+    }
+  ]
+}
