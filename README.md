@@ -23,15 +23,26 @@ Per-class on combined test:
 
 ## Setup
 
-Python 3.10 or newer. On Apple Silicon the install picks up MPS automatically; on CUDA Linux it picks up the NVIDIA wheel.
+
+Python 3.10 or newer. Uses [uv](https://docs.astral.sh/uv/) for the venv and dependency install. If you do not have uv yet:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh    # or: brew install uv
+```
+
+On Apple Silicon the install picks up MPS automatically; on CUDA Linux it picks up the NVIDIA wheel.
+
 
 ```bash
 git clone git@github.com:axiotic-ai/prompt_injection.git
 cd prompt_injection
-python -m venv .venv && source .venv/bin/activate
-pip install -e .
+uv venv
+source .venv/bin/activate
+uv pip install -e .
 python -m ipykernel install --user --name ogma-pi --display-name "ogma-pi"
 ```
+
+On Apple Silicon the install picks up MPS automatically; on CUDA Linux it picks up the NVIDIA wheel.
 
 The base model `axiotic/ogma-base` is public on HuggingFace; auth is not required but suppresses rate-limit warnings:
 
