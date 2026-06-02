@@ -1,0 +1,21 @@
+# Virtualenvs
+.venv/
+
+# HuggingFace cache (model + dataset downloads)
+.hf-cache/
+
+# Fine-tuned model checkpoints written by the notebook
+ogma-prompt-injection/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
