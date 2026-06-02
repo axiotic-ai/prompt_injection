@@ -23,13 +23,15 @@ Per-class on combined test:
 
 ## Setup
 
+
 Python 3.10 or newer. Uses [uv](https://docs.astral.sh/uv/) for the venv and dependency install. If you do not have uv yet:
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh    # or: brew install uv
 ```
 
-Then:
+On Apple Silicon the install picks up MPS automatically; on CUDA Linux it picks up the NVIDIA wheel.
+
 
 ```bash
 git clone git@github.com:axiotic-ai/prompt_injection.git
