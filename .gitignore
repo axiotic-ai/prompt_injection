@@ -4,9 +4,6 @@
 # HuggingFace cache (model + dataset downloads)
 .hf-cache/
 
-# Fine-tuned model checkpoints written by the notebook / script
-ogma-prompt-injection/
-
 # Training log written by train.py
 train.log
 

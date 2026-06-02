@@ -1,0 +1,22 @@
+{
+  "auto_map": {
+    "AutoTokenizer": [
+      null,
+      "tokenization_ogma.OgmaTokenizerFast"
+    ]
+  },
+  "backend": "tokenizers",
+  "bos_token": "[CLS]",
+  "cls_token": "[CLS]",
+  "do_lower_case": true,
+  "eos_token": "[SEP]",
+  "is_local": false,
+  "local_files_only": false,
+  "mask_token": "[MASK]",
+  "model_max_length": 1024,
+  "pad_token": "<pad>",
+  "padding_side": "right",
+  "sep_token": "[SEP]",
+  "tokenizer_class": "OgmaTokenizerFast",
+  "unk_token": "<unk>"
+}
