@@ -7,15 +7,33 @@
 # Training log written by train.py
 train.log
 
+# Ablation run outputs (checkpoints + logs)
+runs/
+
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 build/
 dist/
-
+.env
 # Jupyter
 .ipynb_checkpoints/
 
 # macOS
 .DS_Store
+
+# HF export staging (contains weights)
+hf_export/
+
+# Data generation — kept off the repo (data is published as a HF dataset)
+datagen/
+
+# Local training output / old checkpoint (model is on the HF Hub)
+ogma-prompt-injection/
+
+# IDE
+.idea/
+
+# Eval data — regenerable from eval/build_*.py; contains third-party dataset text
+eval/*.jsonl

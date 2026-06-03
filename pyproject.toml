@@ -11,6 +11,8 @@ dependencies = [
     "sentencepiece>=0.2",
     "huggingface_hub>=0.23",
     "ipykernel>=6.29",
+    "jupyter>=1.1.1"
+
 ]
 
 [build-system]
